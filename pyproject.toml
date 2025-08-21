@@ -10,10 +10,9 @@ readme = "README.md"
 authors = [
     {name = "Rayan Zaki", email = "rayan.hassici@ensia.edu.dz"}
 ]
-license = {file = "LICENSE"}
+license = "MIT"
 classifiers = [
     "Programming Language :: Python :: 3",
-    "License :: OSI Approved :: MIT License",
     "Operating System :: OS Independent",
 ]
 requires-python = ">=3.12"
@@ -29,7 +28,8 @@ dependencies = [
 "Bug Tracker" = "https://github.com/rayanzaki/mcp-google-contacts-server/issues"
 
 [tool.setuptools]
-packages = ["mcp_google_contacts_server"]
+package-dir = {"" = "src"}
+py-modules = ["config", "formatters", "google_contacts_service", "main", "tools"]
 
 [project.scripts]
-mcp-google-contacts = "mcp_google_contacts_server.main:main"
+mcp-google-contacts = "main:main"

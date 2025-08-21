@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup
 
 setup(
     name="mcp-google-contacts-server",
@@ -9,19 +9,13 @@ setup(
     author="Rayan Zaki",
     author_email="rayan.hassici@ensia.edu.dz",
     url="https://github.com/rayanzaki/mcp-google-contacts-server",
-    packages=find_packages(),
-    install_requires=[
-        "fastmcp",
-        "google-api-python-client",
-        "google-auth",
-        "google-auth-oauthlib",
-    ],
+    package_dir={"": "src"},
+    py_modules=["config", "formatters", "google_contacts_service", "main", "tools"],
     classifiers=[
         "Programming Language :: Python :: 3",
-        "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires=">=3.6",
+    python_requires=">=3.12",
     entry_points={
         "console_scripts": [
             "mcp-google-contacts=main:main",

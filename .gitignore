@@ -10,3 +10,4 @@ wheels/
 .venv
 token.json
 credentials.json
+gcp-oauth.keys.json
