@@ -1,3 +1,5 @@
+[![MseeP.ai Security Assessment Badge](https://mseep.net/pr/rayanzaki-mcp-google-contacts-server-badge.png)](https://mseep.ai/app/rayanzaki-mcp-google-contacts-server)
+
 # 📇 MCP Google Contacts Server
 
 A Machine Conversation Protocol (MCP) server that provides Google Contacts functionality, allowing AI assistants to manage contacts, search your organization's directory, and interact with Google Workspace. Much updated from its original by Gemini AI in Gemini CLI. 
